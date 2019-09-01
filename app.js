@@ -12,7 +12,7 @@ mongoose.connect(process.env.MONGO_URI, {
     useCreateIndex: true
 }).then(() => console.log(' DB Connected'))
 
-app.use("api", userRoutes)
+app.use("/api", userRoutes)
 
 const port = process.env.PORT || 8000
 
